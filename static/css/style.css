@@ -1,7 +1,3 @@
-img{
-    height:150px;
-}
-
 body {
     
     font-family: 'Linden Hill',serif;
@@ -11,6 +7,10 @@ body {
     color:black;
     background-color: white;
 }
+.content{
+    height: 100vh;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #333;
 }
@@ -43,16 +43,15 @@ nav.navbar.navbar-default {
     background-color: transparent;
     border: transparent;
 }
-.footer {
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:100px;   
 }
-
-a.navbar-brand {
-    height: fit-content;
+.navbar-brand>img {
+    display: block;
+    height: 100px;
 }
 .navbar-nav{
     background-color: white;
