@@ -1,10 +1,8 @@
 body {
-    
-    font-family: 'Linden Hill',serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     font-size: 2rem;
     text-align: center;
-    color:black;
     background-color: white;
 }
 .content{
@@ -19,6 +17,9 @@ li {
     list-style: none;
     color: white;
   
+}
+.navbar-default .navbar-nav>li>a:hover{
+  color: gold;
 }
 i.fa.fa-phone {
     color: #4dbd4d;
