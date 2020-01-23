@@ -12,11 +12,12 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #333;
+    color: white;
 }
 
 li {
     list-style: none;
+    color: white;
   
 }
 i.fa.fa-phone {
@@ -53,10 +54,7 @@ nav.navbar.navbar-default {
     display: block;
     height: 100px;
 }
-.navbar-nav{
-    background-color: white;
-    color:black;
-}
+
 .col-xs-12.logo{
     height: 50px;
 }
@@ -66,4 +64,14 @@ nav.navbar.navbar-default {
     padding: 15px;
     color: white;
     background-image: linear-gradient(to right, rgb(94, 224, 94) ,black);
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+    background-image: linear-gradient(to right, rgb(94, 224, 94) ,black);
+    padding: 20px;
+}
+@media (max-width: 768px){
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    margin-top: 125px;
+  }
 }

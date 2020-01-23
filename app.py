@@ -33,6 +33,9 @@ def contact():
     return render_template("contact.html")
 
 
+@app.route('/testimonials')
+def testimonials():
+    return render_template("testimonials.html")
     
     
     
