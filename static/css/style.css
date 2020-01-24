@@ -25,17 +25,6 @@ i.fa.fa-phone {
     color: #4dbd4d;
 }
 
-.mysocial li a i{
-    padding: 10px;
-    border-radius: 30%;
-    background-color: #000000;
-    color: white;
-    transition: all 0.40s ease-in-out;
-   -moz-transition: all 0.40s ease-in-out;
-   -webkit-transition: all 0.40s ease-in-out;
-   -o-transition: all 0.40s ease-in-out;
-}
-
 .page-header {
     padding-bottom: 9px;
     margin: 40px 0 20px;
@@ -71,51 +60,15 @@ nav.navbar.navbar-default {
     background-image: linear-gradient(to right, rgb(101, 192, 106) ,#000000de);;
     padding: 20px;
 }
-
-a.fb-message-white {
-  font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #0084ff;
-  background-color: #fff;
-  border: 1px solid #ececec;
-  width: 127px;
-  height: 35px;
-  line-height: 35px;
-  position: fixed;
-  border-radius: 3px;
-  outline: none;
-  -webkit-transition: all ease .15s;
-  -o-transition: all ease .15s;
-  -moz-transition: all ease .15s;
-  transition: all ease .15s;
+.fa-facebook-messenger {
+    color: #62ba67;
 }
-a.fb-message-white:hover {
-  background-color: #fafafa;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-  /* transform: scale(1.15); */ /* uncomment to add zoom effect */
+.fa-instagram {
+    color: white;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
-a.fb-message-white:focus {
-  background-color: #fff;
-  border: 1px solid #bbb;
-  -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
-  box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
-}
-
-.fb-message-white i {
-  background-image: url('https://i.imgur.com/WFeWHxl.png');
-  background-repeat: no-repeat;
-  background-size: 17px;
-  background-position: 7px 9px;
-  top: -1px;
-  height: 18px;
-  width: 17px;
-  padding: 10px 7px;
-  float: left;
+.mysocial.list-inline.social-links{
+ border-radius:15%;
 }
 @media (max-width: 768px){
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
