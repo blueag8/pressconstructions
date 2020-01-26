@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="company-details">
+	<h3 class="name">Press Constructions</h3>
+	<br>
+
+	<div class="address"> </div>
+	<div class="address2">Bray Park </div>
+	<div class="row">
+		<div class="col">
+			<div class="state">Queensland </div>
+		</div>
+		<div class="col">
+			<div class="postcode">4500</div>
+		</div>
+	</div>
+	<br>
+	<div class="email">enquiry@pressconstructions</div>
+	<br>
+	<div class="qbcc">QBCC Licence 1512 5852</div>
+</div>
+
+<div class="center-form">
+	<form method="POST">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-lg-6">
+				<input type="text" name="name" class="form-control text-center" id="firstname" placeholder="First Name" required/>
+            </div>
+				<div class="col-xs-12 col-sm-6 col-lg-6">
+					<input type="text" name="name" class="form-control text-center" id="lastname" placeholder="Last Name" required/>
+            </div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<input type="number" name="phone" class="form-control text-center" id="phone" placeholder="Contact Number" required/>
+                    </div>
+						<div class="col-xs-12 col-sm-6 col-lg-6">
+							<input type="text" name="email" class="form-control text-center" id="mailaddress" placeholder="Email" required/>
+                     </div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12">
+
+								<textarea row="20" name="enquiry"class="form-control text-center" id="enquiry" placeholder="Message" required/></textarea>
+
+							</div>
+						</div>
+
+	</form>
+
+	<button type="submit" class="btn btn-secondary center-block">Send </button>
+</div>
+{% endblock %}
