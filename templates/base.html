@@ -23,8 +23,10 @@
 
 
 <body>
-   <div id="root"></div>
-    <script src="scripts.js"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=989900854742977&autoLogAppEvents=1">
+	</script>
 	<!----Navigation----->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -50,7 +52,7 @@
 						<li><a href="{{url_for('projects')}}">Gallery</a></li>
 						<li><a href="{{url_for('testimonials')}}">Testimonials</a></li>
 						<li><a href="{{url_for('contact')}}"">Contact Us</a></li>
-						<li><a class="phone"><i class="fa fa-phone"></i>
+						<li><a class=" phone"><i class="fa fa-phone"></i>
 								0466 158 877 </a></li>
 					</ul>
 				</div>
@@ -64,7 +66,35 @@
 
 
 
-		<i class="fab fa-facebook-messenger" data-toggle="tooltip" title="Message us via fb messenger"></i>
+		<!-- Button trigger modal -->
+
+
+		<i class="fab fa-facebook-messenger" data-toggle="modal" data-target="#myModal" title="Message us via fb messenger"></i>
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="modal-body">
+							<div class="fb-page" data-href="https://www.facebook.com/pressconstructions"
+								data-tabs="messages" data-width="" data-height="" data-small-header="false"
+								data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+								<blockquote cite="https://www.facebook.com/pressconstructions"
+									class="fb-xfbml-parse-ignore"><a
+										href="https://www.facebook.com/pressconstructions">Press Constructions</a>
+								</blockquote>
+							</div>
+						</div>
+						<div class="modal-footer">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 		<!--Footer-->
 
@@ -95,10 +125,16 @@
 
 
 
+
+
+
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
 			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+		</script>
+		<script src="js/bootstrap.min.js"></script>
 		</script>
 	</body>
 	</section>
