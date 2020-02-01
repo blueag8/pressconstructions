@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block title %}Press | Contact Us{% endblock %}
 
+{% block content %}
+<div class="container-fluid">
 <div class="company-details">
 	<h3 class="name">Press Constructions</h3>
-	<br>
-
-	<div class="address"> </div>
-	<div class="address2">Bray Park </div>
+	<div class="address">Bray Park </div>
 	<div class="row">
 		<div class="col">
 			<div class="state">Queensland </div>
@@ -18,8 +17,6 @@
 	</div>
 	<br>
 	<div class="email">enquiry@pressconstructions</div>
-	<br>
-	<div class="qbcc">QBCC Licence 1512 5852</div>
 </div>
 
 <div class="center-form">
@@ -48,9 +45,12 @@
 
 							</div>
 						</div>
+                        	<button type="submit" class="btn btn-secondary center-block">Send </button>
 
 	</form>
-
-	<button type="submit" class="btn btn-secondary center-block">Send </button>
 </div>
+
+
+
+
 {% endblock %}
