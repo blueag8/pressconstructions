@@ -25,10 +25,6 @@ footer{
 
 }
 
-.carousel-inner {
-    height: 80vh;
-}
-
 .navbar-default .navbar-nav>li>a {
     color: white;
 }
@@ -51,7 +47,7 @@ i.fa.fa-phone {
     border: none;
 }
 
-#footer {
+footer {
    position:absolute;
    bottom:0;
    width:100%;
@@ -63,7 +59,6 @@ img#logo {
 .details {
     margin-left: 0;
     width: 100%;
-    padding: 15px;
     color: white;
     background-image: linear-gradient(to right, rgb(101, 192, 106) ,#000000de);;
 }
@@ -157,4 +152,5 @@ nav.navbar.navbar-default {
     border: transparent;
     padding-bottom: 50px;
 }
+
 }

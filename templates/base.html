@@ -23,10 +23,27 @@
 
 
 <body>
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous"
-		src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=989900854742977&autoLogAppEvents=1">
-	</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '989900854742977',
+      autoLogAppEvents  : true,
+      xfbml      : true,
+      version    : 'v5.0'
+    });
+  }; 
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+        <div class="fb-customerchat"
+ page_id="10484450482055">
+</div>
 	<!----Navigation----->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -63,38 +80,6 @@
 	
 			{% block content %}{% endblock %}
 	
-
-
-
-		<!-- Button trigger modal -->
-
-
-		<i class="fab fa-facebook-messenger" data-toggle="modal" data-target="#myModal" title="Message us via fb messenger"></i>
-
-
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<div class="modal-body">
-							<div class="fb-page" data-href="https://www.facebook.com/pressconstructions"
-								data-tabs="messages" data-width="" data-height="" data-small-header="false"
-								data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-								<blockquote cite="https://www.facebook.com/pressconstructions"
-									class="fb-xfbml-parse-ignore"><a
-										href="https://www.facebook.com/pressconstructions">Press Constructions</a>
-								</blockquote>
-							</div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 
 		<!--Footer-->
 

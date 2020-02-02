@@ -1,4 +1,5 @@
 import os
+import env
 
 from flask import Flask, render_template, redirect, request, url_for
 
@@ -9,8 +10,7 @@ app = Flask(__name__)
 
 #set app variables
 
-
-
+PAGE_ACCESS_TOKEN = os.environ.get('PAGE_ACCESS_TOKEN')
 
 
 #home page
