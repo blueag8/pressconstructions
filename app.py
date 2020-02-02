@@ -12,7 +12,6 @@ app = Flask(__name__)
 
 PAGE_ACCESS_TOKEN = os.environ.get('PAGE_ACCESS_TOKEN')
 
-
 #home page
 
 
@@ -44,4 +43,4 @@ def testimonials():
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(8000),
-            debug=True)
+            debug=False)
