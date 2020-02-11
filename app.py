@@ -1,5 +1,5 @@
 import os
-import env
+
 
 from flask import Flask, render_template, redirect, request, url_for
 
@@ -44,4 +44,4 @@ def testimonials():
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(8000),
-            debug=True)
+            debug=False)
