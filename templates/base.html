@@ -8,6 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>{% block title %}{% endblock %}</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		type="text/css" />
@@ -23,27 +27,17 @@
 
 
 <body>
-<script>
-  window.fbAsyncInit = function() {
+	<script>
+		window.fbAsyncInit = function() {
     FB.init({
-      appId      : '989900854742977',
-      autoLogAppEvents  : true,
-      xfbml      : true,
-      version    : 'v5.0'
+      appId            : '989900854742977',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
     });
-  }; 
-
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-        <div class="fb-customerchat"
- page_id="10484450482055">
-</div>
+  };
+	</script>
+	<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 	<!----Navigation----->
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -77,9 +71,23 @@
 	</nav>
 
 	<body>
-	
-			{% block content %}{% endblock %}
-	
+
+		{% block content %}{% endblock %}
+		<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "110484450482055", // Facebook page ID
+            call_to_action: "Message us", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
 
 		<!--Footer-->
 
@@ -105,7 +113,7 @@
 			<div class="Copyright">
 				&copy WickeDesigns 2020
 			</div>
-		
+
 		</footer>
 
 
