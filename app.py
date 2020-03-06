@@ -44,4 +44,4 @@ def testimonials():
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(8000),
-            debug=False)
+            debug=True)
