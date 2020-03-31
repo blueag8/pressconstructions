@@ -11,16 +11,14 @@ footer {
     color: white;
     background-image: linear-gradient(to right, rgb(101, 192, 106) ,#000000de);;
 }
- 
-
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
 
 .fab {
 
     font-size: 25px;
  
+}
+li>a:hover{
+  color: #bda157;
 }
 
 li {
@@ -31,9 +29,10 @@ li {
 .navbar-default .navbar-nav>li>a:hover{
   color: #bda157;
 }
-li>a:hover{
-  color: #bda157;
+.navbar-default .navbar-nav>li>a {
+    color: white;
 }
+
 
 i.fa.fa-phone {
     color: #34fb34;
@@ -123,9 +122,9 @@ button[type="submit"]:hover {
 nav.navbar.navbar-default {
     background-color: transparent;
     border: transparent;
-    padding-bottom: 20px;
 }
 .navbar-brand {
-    float: left;
     height: auto;
+}
+
 }
