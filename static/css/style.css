@@ -36,7 +36,7 @@ li>a:hover{
 }
 
 i.fa.fa-phone {
-    color: #4dbd4d;
+    color: #34fb34;
 }
 
 .page-header {
@@ -120,12 +120,12 @@ button[type="submit"]:hover {
     color:#fafafa;
 }
 @media (max-width: 768px){
-  .navbar-nav {
-    margin: 7.5px -15px;
-}
 nav.navbar.navbar-default {
     background-color: transparent;
     border: transparent;
+    padding-bottom: 20px;
 }
-
+.navbar-brand {
+    float: left;
+    height: auto;
 }
