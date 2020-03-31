@@ -126,5 +126,8 @@ nav.navbar.navbar-default {
 .navbar-brand {
     height: auto;
 }
+.card-group {
+    overflow: hidden;
+}
 
 }
