@@ -1,27 +1,17 @@
-html{
-    height: 100%;
-}
 body {
     font-family: 'Open Sans', sans-serif;
-    min-height:100%; 
-    position:relative; 
-    padding-bottom:[footer-height];
-    font-size: 2rem;  
-    text-align: center;
     background-color: white;
 }
 img {
     height: 50vh;
 }
-footer{
-    position: fixed;
-    bottom: 0;
-    left:0;
-    width: 100%;
+
+footer {
+    font-size: 15px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(101, 192, 106) ,#000000de);;
 }
-.about {
-    margin-top: 15px;
-}
+ 
 
 .navbar-default .navbar-nav>li>a {
     color: white;
@@ -41,6 +31,10 @@ li {
 .navbar-default .navbar-nav>li>a:hover{
   color: #bda157;
 }
+li>a:hover{
+  color: #bda157;
+}
+
 i.fa.fa-phone {
     color: #4dbd4d;
 }
@@ -59,31 +53,17 @@ i.fa.fa-phone {
 img#logo {
     height:100px;
 }
-.details {
-    color: white;
-    background-image: linear-gradient(to right, rgb(101, 192, 106) ,#000000de);;
-}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
     background-image: linear-gradient(to right, rgb(101, 192, 106) ,#000000de);;
     padding: 20px;
 }
-.fa-facebook-messenger {
-    border: thin;
-    border-radius: 80%;
-    margin-right: 10px;
-    border-style: solid;
-    background-color: white;
-    padding: 15px;
-    color: #62ba67;
-    position: fixed;
-    right: 0;
-    margin-bottom: 10vh;
-    border-color: black;
-    bottom: 0;
-    display: flex;
-}
 
+.container{
+    padding: 20px;
+    text-align: center;
+}
 .img-responsive{
     height: auto;
     max-width: 100%;
@@ -99,7 +79,7 @@ img#logo {
 
 
 a {
-    color: #63bc68;
+    color: #f6faf7;
     text-decoration: none;
 }
 
@@ -140,18 +120,12 @@ button[type="submit"]:hover {
     color:#fafafa;
 }
 @media (max-width: 768px){
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    margin-top: 125px;
-    
-  }
   .navbar-nav {
     margin: 7.5px -15px;
 }
 nav.navbar.navbar-default {
     background-color: transparent;
     border: transparent;
-    padding-bottom: 50px;
-
 }
 
 }

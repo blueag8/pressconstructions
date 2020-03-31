@@ -1,8 +1,20 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 {% block title %}Press Constructions{% endblock %}
 {% block content %}
-	
-            <img class="responsive" src="static/images/PressImages.jpg" alt="logo" style="height:60vh;">	
-		
+{% block additional_styles %}
+<!-- hide logo on mobile responsive -->
+<style>
+@media (max-width:768px){
+img#logo {
+    display:none !important;
+}
+}
+</style>
+{% endblock %}
+
+<!-- main page display -->
+	<div class="container">
+            <img class="img-responsive" src="static/images/PressImages.jpg" alt="logo" style="height:50vh;padding-top:10px">	
+	</div>
 
 {% endblock %}

@@ -2,42 +2,51 @@
 {% block title %}Press | Testimonials{% endblock %}
 
 {% block content %}
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      	<div class="fb-post" data-href="https://www.facebook.com/110484450482055/posts/800258520452670"
-					data-width="350">
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+	window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '989900854742977',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
+      
+    
+    });
+  };
+</script>
+
+<div class="container">
+	<div class="card-group">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="fb-post" data-href="https://www.facebook.com/110484450482055/posts/800258520452670"
+						data-width="500" data-adapt-container-width="true">
+					</div>
 				</div>
-		
-    </div>
-    <div class="item">
-    	<div class="fb-post" data-href="https://www.facebook.com/110484450482055/posts/2237818553187326"
-					data-width="350"></div>
-		
-    </div>
-    <div class="item">
-    			<div class="fb-post" data-href="https://www.facebook.com/110484450482055/posts/10162954932750595"
-					data-width="350"></div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<div class="fb-post" data-href="https://www.facebook.com/110484450482055/posts/2237818553187326"
+						data-width="500" data-adapt-container-width="true">
+					</div>
+				</div>
+			</div>
 	
-    </div>
-  </div>
+			<div class="col-md-4">
+					<div class="card">
+                    	<div class="fb-post"
+							data-href="https://www.facebook.com/110484450482055/posts/10162954932750595"
+							data-width="500" data-adapt-container-width="true">
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div> <!-- Carousel -->
 
-
-	{% endblock %}
+		{% endblock %}

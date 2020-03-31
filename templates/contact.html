@@ -3,54 +3,75 @@
 {% block title %}Press | Contact Us{% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-<div class="company-details">
+<div class="container">
+<div class="details" style="text-align:center;">
 	<h3 class="name">Press Constructions</h3>
 	<div class="address">Bray Park </div>
-	<div class="row">
-		<div class="col">
-			<div class="state">Queensland </div>
+
+	<div class="state">Queensland </div>
+	
+	
+	<div class="postcode">4500</div>
+	
+
+
+	<div class="email">pressconstructions@outlook.com</div>
+</div>
+
+<!-- Alert -->
+<alert style="background-color:#66ff66;">This form is currently under construction. Please get in contact with us via the other options.
+</alert>
+<!-- Form Started -->
+	<div class="container form-top">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+				<div class="panel">
+					<div class="panel-body">
+						<form action="/contactus" id="email_form">
+						 	<div class="form-group">
+						 		<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+						 		<input type="text" name="name" class="form-control" placeholder="Enter Name" required/>
+						 	</div>
+						 	<div class="form-group">
+						 		<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+						 		<input type="email" name="email" class="form-control" placeholder="Enter Email" required/>
+						 	</div>
+						 	<div class="form-group">
+						 		<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+						 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"required/></textarea>
+						 	</div>
+
+
+						 	<div class="form-group">
+						 		<button class="button" data-target="message" class="btn modal-trigger"type="submit">Send →</button>
+						 	</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col">
-			<div class="postcode">4500</div>
+
+
+  <!-- Modal Structure -->
+  <div id="message" class="modal">
+    <div class="modal-content">
+	    <p>message sent</p>
+    <div class="modal-footer">
+     <button><a class="modal-action modal-close waves-effect waves-green btn-flat">continue</a></button> 
+    </div>
+  </div>
+  </div>
 		</div>
 	</div>
-	<br>
-	<div class="email">enquiry@pressconstructions</div>
-</div>
-
-<div class="center-form">
-	<form method="POST">
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-lg-6">
-				<input type="text" name="name" class="form-control text-center" id="firstname" placeholder="First Name" required/>
-            </div>
-				<div class="col-xs-12 col-sm-6 col-lg-6">
-					<input type="text" name="name" class="form-control text-center" id="lastname" placeholder="Last Name" required/>
-            </div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-lg-6">
-						<input type="number" name="phone" class="form-control text-center" id="phone" placeholder="Contact Number" required/>
-                    </div>
-						<div class="col-xs-12 col-sm-6 col-lg-6">
-							<input type="text" name="email" class="form-control text-center" id="mailaddress" placeholder="Email" required/>
-                     </div>
-						</div>
-
-						<div class="row">
-							<div class="col-xs-12">
-
-								<textarea row="20" name="enquiry"class="form-control text-center" id="enquiry" placeholder="Message" required/></textarea>
-
-							</div>
-						</div>
-                        	<button type="submit" class="btn btn-secondary center-block">Send </button>
-</div>
-	</form>
 </div>
 
 
+<script type="text/javascript">
+if method =="POST":
+$('#message').modal('show'); 
+else:
+$('#message').modal('hide'); 
+</script>
 
 
 {% endblock %}
