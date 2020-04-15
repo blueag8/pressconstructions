@@ -1,20 +1,41 @@
 {% extends 'base.html' %}
-{% block title %}Press Constructions{% endblock %}
+{% block title %}Majesty Homes{% endblock %}
 {% block content %}
-{% block additional_styles %}
-<!-- hide logo on mobile responsive -->
-<style>
-@media (max-width:768px){
-img#logo {
-    display:none !important;
-}
-}
-</style>
-{% endblock %}
+<div class="img-overlay">
+    <img class="image-home" src="static/img/home.png">
+    <div class="image-overlay"></div>
+    <img class="img-logo" src="static/img/logo1.png">  
+</div>
 
-<!-- main page display -->
-	<div class="container">
-            <img class="img-responsive" src="static/images/PressImages.jpg" alt="logo" style="height:50vh;padding-top:10px">	
-	</div>
+<div class="main">
+    <div class="panel">
+        <div class="panel-body">
 
+        <div class="col-md-4">
+          <a class="design" href="#">
+           <img src="static/img/home.png" class="img-round">
+            <h4 class="link">Designs</h4>
+           </a>
+            <p>This is text about the Designs</p>
+        </div>
+   
+        <div class="col-md-4">
+          <a class="projects" href="#">
+            <img src="static/img/home.png" class="img-round">
+             <h4 class="link">Projects</h4>
+           </a>
+             <p>This is text about the Projects</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="inclusions">
+            <img src="static/img/home.png" class="img-round">
+            <h4 class="link">Inclusions</h4>
+           </a>
+            <p>This is text about the inclusions</p>
+        </div>
+
+        </div>
+    </div>
+</div>
 {% endblock %}

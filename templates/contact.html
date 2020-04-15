@@ -1,77 +1,47 @@
 {% extends 'base.html' %}
 
-{% block title %}Press | Contact Us{% endblock %}
+{% block title %}Majesty Homes | Contact Us{% endblock %}
 
 {% block content %}
-<div class="container">
-<div class="details" style="text-align:center;">
-	<h3 class="name">Press Constructions</h3>
-	<div class="address">Bray Park </div>
 
-	<div class="state">Queensland </div>
-	
-	
-	<div class="postcode">4500</div>
-	
-
-
-	<div class="email">pressconstructions@outlook.com</div>
-</div>
-
-<!-- Alert -->
-<alert style="background-color:#66ff66;">This form is currently under construction. Please get in contact with us via the other options.
-</alert>
 <!-- Form Started -->
-	<div class="container form-top">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-				<div class="panel">
-					<div class="panel-body">
-						<form action="/contactus" id="email_form">
-						 	<div class="form-group">
-						 		<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-						 		<input type="text" name="name" class="form-control" placeholder="Enter Name" required/>
+<div class="container form-top">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+			<div class="panel">
+              <div class="panel-body">
+				<img src="static/img/logo.png" style="height:150px;">
+                <div class="details">
+				<div class="address">Darwin</div>
+				<div class="state">Northern Territory</div>
+				<div class="postcode">0800</div>
+				<div class="email">majestyhomes@majestyhomesnt.com.au</div>
+	            </div>
+				<form action="/contactus" id="email_form">
+					<div class="form-group">
+						<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+						<input type="text" name="name" class="form-control" placeholder="Enter Name" required/>
 						 	</div>
-						 	<div class="form-group">
-						 		<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-						 		<input type="email" name="email" class="form-control" placeholder="Enter Email" required/>
+					 	<div class="form-group">
+							<label>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                            </label>
+							<input type="email" name="email" class="form-control" placeholder="Enter Email" required/>
 						 	</div>
-						 	<div class="form-group">
-						 		<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
-						 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"required/></textarea>
-						 	</div>
+							<div class="form-group">
+								<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+								<textarea rows="3" name="message" class="form-control" placeholder="Message" required /></textarea>
+							</div>
 
-
-						 	<div class="form-group">
-						 		<button class="button" data-target="message" class="btn modal-trigger"type="submit">Send →</button>
-						 	</div>
-						</form>
-					</div>
-				</div>
+							<div class="form-group">
+								<button class="send" data-target="message" class="btn modal-trigger"type="submit"> Send </button>
+							</div>
+				</form>
 			</div>
-		</div>
-
-
-  <!-- Modal Structure -->
-  <div id="message" class="modal">
-    <div class="modal-content">
-	    <p>message sent</p>
-    <div class="modal-footer">
-     <button><a class="modal-action modal-close waves-effect waves-green btn-flat">continue</a></button> 
-    </div>
-  </div>
-  </div>
 		</div>
 	</div>
 </div>
 
-
-<script type="text/javascript">
-if method =="POST":
-$('#message').modal('show'); 
-else:
-$('#message').modal('hide'); 
-</script>
-
+</div>
 
 {% endblock %}
